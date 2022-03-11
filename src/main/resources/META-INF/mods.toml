@@ -1,0 +1,11 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "AGPL v3"
+[[mods]]
+modId = "drinkit"
+version = "1.0.0"
+displayName = "Drink It!"
+credits = "Thanks for rinko1231's idea"
+authors = "Tapio"
+description = '''
+'''
