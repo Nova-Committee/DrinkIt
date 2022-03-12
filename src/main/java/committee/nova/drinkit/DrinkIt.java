@@ -8,8 +8,6 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
-
 public class DrinkIt implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Drink It");
 	public static final String MODID = "drinkit";
