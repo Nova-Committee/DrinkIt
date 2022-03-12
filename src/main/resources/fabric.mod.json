@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "drinkit",
+  "version": "${version}",
+
+  "name": "Drink It",
+  "description": "Drink what are supposed to be drunk.",
+  "authors": [
+    "MikhailTapio",
+    "Peakstep"
+  ],
+  "contact": {
+    "sources": "https://github.com/Nova-Committee/DrinkIt"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/drinkit/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "committee.nova.drinkit.DrinkIt"
+    ]
+  },
+  "mixins": [
+    "drinkit.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
