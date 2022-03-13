@@ -1,17 +1,17 @@
 package committee.nova.drinkit;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.item.Item;
-import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class DrinkIt implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Drink It");
 	public static final String MODID = "drinkit";
-	public static final Tag<Item> DRINKABLE = TagFactory.ITEM.create(new Identifier(MODID, "drinkable"));
+	public static final TagKey<Item> DRINKABLE = TagKey.of(Registry.ITEM_KEY, new Identifier(MODID, "drinkable"));
 
 	@Override
 	public void onInitialize() {
