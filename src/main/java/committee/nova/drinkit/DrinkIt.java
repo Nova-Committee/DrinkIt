@@ -11,6 +11,7 @@ import static net.minecraft.tags.ItemTags.bind;
 public class DrinkIt {
     public static final String MODID = "drinkit";
     public static final ITag.INamedTag<Item> DRINKABLE = bind(MODID + ":drinkable");
+    public static final ITag.INamedTag<Item> THICK = bind(MODID + ":thick");
 
     public DrinkIt() {
         MinecraftForge.EVENT_BUS.register(this);

@@ -4,6 +4,8 @@ import committee.nova.drinkit.DrinkIt;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -19,5 +21,11 @@ public abstract class MixinItemStack {
     public void onGetUseAnimation(CallbackInfoReturnable<UseAction> cir) {
         final Item i = this.getItem();
         if (DrinkIt.DRINKABLE.contains(i)) cir.setReturnValue(UseAction.DRINK);
+    }
+
+    @Inject(method = "getDrinkingSound", at = @At("RETURN"), cancellable = true)
+    public void onGetDrinkingSound(CallbackInfoReturnable<SoundEvent> cir) {
+        final Item i = this.getItem();
+        if (DrinkIt.THICK.contains(i)) cir.setReturnValue(SoundEvents.HONEY_DRINK);
     }
 }
