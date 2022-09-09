@@ -14,9 +14,9 @@ apply plugin: 'idea'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.16.5-1.0.1'
+version = '1.0.2'
 group = 'committee.nova.drinkit'
-archivesBaseName = 'DrinkIt'
+archivesBaseName = 'DrinkIt-Forge-1.16.5'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
