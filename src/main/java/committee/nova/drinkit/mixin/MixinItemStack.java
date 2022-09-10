@@ -19,13 +19,11 @@ public abstract class MixinItemStack {
 
     @Inject(method = "getUseAnimation", at = @At("RETURN"), cancellable = true)
     public void onGetUseAnimation(CallbackInfoReturnable<UseAnim> cir) {
-        final Item i = this.getItem();
-        if (DrinkIt.DRINKABLE.contains(i)) cir.setReturnValue(UseAnim.DRINK);
+        if (DrinkIt.isDrinkable(this.getItem())) cir.setReturnValue(UseAnim.DRINK);
     }
 
     @Inject(method = "getDrinkingSound", at = @At("RETURN"), cancellable = true)
     public void onGetDrinkingSound(CallbackInfoReturnable<SoundEvent> cir) {
-        final Item i = this.getItem();
-        if (DrinkIt.THICK.contains(i)) cir.setReturnValue(SoundEvents.HONEY_DRINK);
+        if (DrinkIt.isThick(this.getItem())) cir.setReturnValue(SoundEvents.HONEY_DRINK);
     }
 }
