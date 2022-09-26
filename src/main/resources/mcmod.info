@@ -1,14 +1,15 @@
 [
   {
-    "modid": "examplemod",
-    "name": "ExampleMod",
-    "description": "Example mixined scala mod!",
+    "modid": "drinkit",
+    "name": "Drink It!",
+    "description": "Drink what should be drank!",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "",
     "updateUrl": "",
     "authorList": [
-      "Author"
+      "Tapio",
+      "Rinko1231"
     ],
     "credits": "",
     "logoFile": "",
