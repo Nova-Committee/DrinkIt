@@ -1,0 +1,8 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "package": "committee.nova.drinkit.mixin",
+  "refmap": "refmap.drinkit.json",
+  "mixins": [
+    "MixinItemStack"
+  ]
+}
