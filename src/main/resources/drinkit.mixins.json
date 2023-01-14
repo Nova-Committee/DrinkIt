@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "committee.nova.drinkit.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinItemStack"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "drinkit.mixin-refmap.json",
+  "minVersion": "0.8"
+}
